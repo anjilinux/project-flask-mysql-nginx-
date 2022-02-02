@@ -3,7 +3,16 @@
 ## Unreleased 
 ### Improvements 
 
-- 20210930 - Edit profile 
+- Data Tables - 20220202
+  - Fixes & Improvements
+  - Update Provisioning File `media\transactions_data.csv`
+  - Update `run.py`: `load_data()` helper
+  
+- API - 20220202
+  - `apps/api`
+  - Public CRUD Interface 
+
+- 20210930: Edit profile 
   - Authenticated users are able to edit their profile
     - Name, Surname, Address, Country, ZIP Code
     - Upload a profile image. 

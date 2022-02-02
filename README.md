@@ -34,22 +34,22 @@
     - [x] First, Last Name
     - [x] Birthday, Gender, Email, Phone
     - [x] User Photo
-- [WIP] `Data Tables` - manages paginated information
-  - [WIP] Data load via `admin`
-  - [WIP] Pagination, Inline edit via Ajax
-  - [WIP] Simple Search
-  - [WIP] Export `PDF`/`xls`: one page, multiple pages, filtered by `search` 
-- [WIP] `API` via Flask-RestX
+- [x] `Data Tables` - manages paginated information
+  - [x] Data load via `Flask CLI`
+    - Input: `media/transactions_data.csv`
+    - Load CMD: `flask load_data`
+  - [x] Pagination, Inline edit via Ajax
+  - [x] Simple Search
+  - [x] Export `PDF`/`xls`: one page, multiple pages, filtered by `search` 
+- [x] `API` via Flask-RestX
 - [WIP] `Sample Charts`
 - [WIP] `Social Login`
   - [WIP] *Google*
   - [WIP] *Github*
 - [WIP] `Deployment`: 
   - [x] Docker 
-  - [WIP] *HEROKU* 
+  - [x] *HEROKU* 
   - [WIP] *AWS Ec2* 
-  - [WIP] *Google Cloud* 
-  - [WIP] *Azure* 
 - [WIP] `Payments`: One-time payments via [Stripe Checkout](https://stripe.com/payments/checkout)
 
 <br />

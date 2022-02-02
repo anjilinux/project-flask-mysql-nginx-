@@ -41,7 +41,6 @@ def transactions():
                            pagination=pagination,
                            segment="datatables")
 
-
 @blueprint.route('/transactions_rows_per_page/<int:rows>')
 def transactions_rows_per_page(rows):
     session["ITEMS_PER_PAGE"] = int(rows)
