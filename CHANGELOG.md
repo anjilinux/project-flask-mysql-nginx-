@@ -1,18 +1,18 @@
 # Change Log
 
-## [2.0.2-rc2] 2021-09-23
-### Improvements & Fixes
+## [2.0.2-rc2] 2022-02-02
+### New Features / Improvements / Fixes
 
-- Data Tables - 20220202
+- `2022-02-02`: Data Tables
   - Fixes & Improvements
   - Update Provisioning File `media\transactions_data.csv`
   - Update `run.py`: `load_data()` helper
   
-- API - 20220202
+- `2022-02-02`: Public API (via Flask-RestX)
   - `apps/api`
   - Public CRUD Interface 
 
-- 20210930: Edit profile 
+- `2021-09-30`: Edit profile 
   - Authenticated users are able to edit their profile
     - Name, Surname, Address, Country, ZIP Code
     - Upload a profile image. 
