@@ -28,8 +28,8 @@
 > Get the code
 
 ```bash
-$ git clone https://github.com/app-generator/flask-adminator.git
-$ cd flask-adminator
+$ git clone https://github.com/app-generator/boilerplate-code-flask-dashboard.git
+$ cd boilerplate-code-flask-dashboard
 ```
 
 > Start the app in Docker
