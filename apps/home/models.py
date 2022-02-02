@@ -36,6 +36,7 @@ class Data(db.Model):
 
         cls_dict          = {}
         cls_dict['_id']   = self.id
+        cls_dict['name'] = self.name
         cls_dict['value'] = self.value
 
         return cls_dict
