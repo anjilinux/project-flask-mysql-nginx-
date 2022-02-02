@@ -1,7 +1,7 @@
 {
     "name": "boilerplate-code-flask-dashboard",
     "mastertemplate": "boilerplate-code-flask-dashboard",
-    "version": "2.0.1",
+    "version": "2.0.2-rc1",
     "description": "Template project - Flask Boilerplate Code",
     "repository": {
         "type": "git",

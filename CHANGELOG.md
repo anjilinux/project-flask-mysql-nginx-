@@ -1,7 +1,7 @@
 # Change Log
 
-## Unreleased 
-### Improvements 
+## [2.0.2-rc1] 2021-09-23
+### Improvements & FIxes
 
 - Data Tables - 20220202
   - Fixes & Improvements
