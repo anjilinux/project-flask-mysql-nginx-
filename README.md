@@ -4,26 +4,45 @@
 
 <br />
 
-- Up-to-date [dependencies](./requirements.txt): **Flask 2.0.1**
+- `Up-to-date dependencies`
 - [SCSS compilation](#recompile-css) via **Gulp**
 - UI Kit: **Volt Dashboard** (Free Version) provided by **Themesberg**
-- DBMS & Tools: SQLite / PostgreSQL / SQLAlchemy ORM, Flask-Migrate 
-- Modular design with **Blueprints**
-- Session-Based authentication (via **flask_login**), Forms validation
-- Deployment scripts: Docker, Gunicorn / Nginx, HEROKU
-- Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
+- `DBMS`: SQLite, PostgreSQL (production) 
+- `DB Tools`: SQLAlchemy ORM, Flask-Migrate (schema migrations)
+- `Session-Based` authentication, **Blueprints**
+- `Deployment`: **Docker**, Gunicorn / Nginx, `HEROKU`
+- Free [support](https://appseed.us/support) via `email` and [Discord](https://discord.gg/fZC6hup).
 
 <br />
 
 > Links
 
-- [Boierplate Flask Dashboard](https://appseed.us/admin-dashboards/flask-dashboard-volt) - Product page
-- [Boierplate Flask Dashboard - Demo](https://flask-volt-dashboard.appseed-srv1.com/) - LIVE Demo
-- [Boierplate Flask Dashboard - Docs](https://docs.appseed.us/boilerplate-code/flask-dashboard/) - Documentation
+- 👉 [Boierplate Flask Dashboard](https://appseed.us/admin-dashboards/flask-dashboard-volt) - Product page
+- 👉 [Boierplate Flask Dashboard](https://flask-volt-dashboard.appseed-srv1.com/) - LIVE Demo
+- 👉 [Boierplate Flask Dashboard](https://docs.appseed.us/boilerplate-code/flask-dashboard/) - Documentation
 
 <br />
 
-## **[Product Roadmap](https://github.com/app-generator/boilerplate-code-flask-dashboard/blob/master/SPECS.md)**
+## ✨ Quick Start in `Docker`
+
+> Get the code
+
+```bash
+$ git clone https://github.com/app-generator/flask-adminator.git
+$ cd flask-adminator
+```
+
+> Start the app in Docker
+
+```bash
+$ docker-compose up --build 
+```
+
+Visit `http://localhost:85` in your browser. The app should be up & running.
+
+<br />
+
+## ✨ **[Product Roadmap](https://github.com/app-generator/boilerplate-code-flask-dashboard/blob/master/SPECS.md)**
 
 - [x] **Updated dependencies**
 - [x] **Pythonic Footprint**
@@ -58,50 +77,83 @@
 
 <br />
 
-## How to use it
+## ✨ How to use it
+
+> Clone Sources (this repo)
 
 ```bash
-$ # Get the code
 $ git clone https://github.com/app-generator/boilerplate-code-flask-dashboard.git
 $ cd boilerplate-code-flask-dashboard
-$
-$ # Virtualenv modules installation (Unix based systems)
-$ virtualenv env
-$ source env/bin/activate
-$
-$ # Virtualenv modules installation (Windows based systems)
-$ # virtualenv env
-$ # .\env\Scripts\activate
-$
-$ # Install modules - SQLite Database
-$ pip3 install -r requirements.txt
-$
-$ # OR with PostgreSQL connector
-$ # pip install -r requirements-pgsql.txt
-$
-$ # Set the FLASK_APP environment variable
-$ (Unix/Mac) export FLASK_APP=run.py
-$ (Windows) set FLASK_APP=run.py
-$ (Powershell) $env:FLASK_APP = ".\run.py"
-$
-$ # Set up the DEBUG environment
-$ # (Unix/Mac) export FLASK_ENV=development
-$ # (Windows) set FLASK_ENV=development
-$ # (Powershell) $env:FLASK_ENV = "development"
-$
-$ # Start the application (development mode)
-$ # --host=0.0.0.0 - expose the app on all network interfaces (default 127.0.0.1)
-$ # --port=5000    - specify the app port (default 5000)  
-$ flask run --host=0.0.0.0 --port=5000
-$
-$ # Access the dashboard in browser: http://127.0.0.1:5000/
 ```
-
-> Note: To use the app, please access the registration page and create a new user. After authentication, the app will unlock the private pages.
 
 <br />
 
-## Code-base structure
+> Install Modules using a Virtual Environment
+
+```bash
+$ virtualenv env
+$ source env/bin/activate
+$ pip3 install -r requirements.txt
+```
+
+Or for **Windows-based Systems**
+
+```bash
+$ virtualenv env
+$ .\env\Scripts\activate
+$
+$ # Install modules - SQLite Database
+$ pip3 install -r requirements.txt
+```
+
+<br />
+
+> Set up the environment
+
+```bash
+$ export FLASK_APP=run.py
+$ export FLASK_ENV=development
+```
+
+Or for **Windows-based Systems**
+
+```bash
+$ # CMD terminal
+$ set FLASK_APP=run.py
+$ set FLASK_ENV=development
+$
+$ # Powershell
+$ $env:FLASK_APP = ".\run.py"
+$ $env:FLASK_ENV = "development"
+```
+
+<br />
+
+> Load Sample Data `transactions_data.csv`
+
+```bash
+$ flask load_data
+```
+
+<br />
+
+> Start the APP
+
+```bash
+$ flask run 
+```
+
+At this point we should be able to register new users, authenticate and access the API: 
+
+- Register: `http://localhost:5000/register`
+- Login: `http://localhost:5000/login`
+- Access the public API
+  - Get all items: `http://localhost:5000/api/data`
+  - Get 1st item: `http://localhost:5000/api/data`
+
+<br />
+
+## ✨ Code-base structure
 
 The project is coded using blueprints, app factory pattern, dual configuration profile (development and production) and an intuitive structure presented bellow:
 
@@ -176,13 +228,13 @@ The project is coded using blueprints, app factory pattern, dual configuration p
 
 <br />
 
-## Recompile CSS
+## ✨ Recompile CSS
 
 To recompile SCSS files, follow this setup:
 
 <br />
 
-**Step #1** - Install tools
+> **Step #1** - Install tools
 
 - [NodeJS](https://nodejs.org/en/) 12.x or higher
 - [Gulp](https://gulpjs.com/) - globally 
@@ -191,7 +243,7 @@ To recompile SCSS files, follow this setup:
 
 <br />
 
-**Step #2** - Change the working directory to `assets` folder
+> **Step #2** - Change the working directory to `assets` folder
 
 ```bash
 $ cd apps/static/assets
@@ -199,7 +251,7 @@ $ cd apps/static/assets
 
 <br />
 
-**Step #3** - Install modules (this will create a classic `node_modules` directory)
+> **Step #3** - Install modules (this will create a classic `node_modules` directory)
 
 ```bash
 $ npm install
@@ -209,7 +261,7 @@ $ yarn
 
 <br />
 
-**Step #4** - Edit & Recompile SCSS files 
+> **Step #4** - Edit & Recompile SCSS files 
 
 ```bash
 $ gulp scss
@@ -219,31 +271,9 @@ The generated file is saved in `static/assets/css` directory.
 
 <br />
 
-## Deployment
+## ✨ Deployment
 
 The app is provided with a basic configuration to be executed in [Docker](https://www.docker.com/), [Heroku](https://www.heroku.com/), [Gunicorn](https://gunicorn.org/), and [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/).
-
-<br />
-
-### [Docker](https://www.docker.com/) execution
----
-
-The application can be easily executed in a docker container. The steps:
-
-> Get the code
-
-```bash
-$ git clone https://github.com/app-generator/boilerplate-code-flask-dashboard.git
-$ cd boilerplate-code-flask-dashboard
-```
-
-> Start the app in Docker
-
-```bash
-$ sudo docker-compose pull && sudo docker-compose build && sudo docker-compose up -d
-```
-
-Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
@@ -326,9 +356,9 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 
 ## Credits & Links
 
-- [Flask Framework](https://www.palletsprojects.com/p/flask/) - The offcial website
-- [Boilerplate Code](https://appseed.us/boilerplate-code) - Index provided by **AppSeed**
-- [Boilerplate Code](https://github.com/app-generator/boilerplate-code) - Index published on Github
+- 👉 [Flask Framework](https://www.palletsprojects.com/p/flask/) - The offcial website
+- 👉 [Boilerplate Code](https://appseed.us/boilerplate-code) - Index provided by **AppSeed**
+- 👉 [Boilerplate Code](https://github.com/app-generator/boilerplate-code) - Index published on Github
 
 <br />
 
