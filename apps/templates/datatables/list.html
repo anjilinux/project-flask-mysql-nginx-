@@ -76,7 +76,7 @@
                   <td><span class="fw-bold">{{ data.id }}</span></td>
                   <td><span class="fw-normal">{{ data.name }}</span></td>
                   <td><span class="fw-normal">${{ data.value }}</span></td>
-                  <td><span class="fw-normal">{{ data.ts.strftime('%d %b %Y') }}</span></td>
+                  <td><span class="fw-normal">{{ data.ts | ctime }}</span></td>
                   <td>
                     <a class="btn btn-sm btn-secondary" href="{{ url_for('datatables_blueprint.edit', id=data.id) }}">Edit</a>
                     <a class="btn btn-sm btn-danger delete_item"  data-href="{{ url_for('datatables_blueprint.row_delete', id=data.id) }}">Delete</a>

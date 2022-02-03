@@ -13,10 +13,12 @@ class Data(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
 
-    type   = db.Column(db.String(64))
-    name   = db.Column(db.String(64))
-    value  = db.Column(db.Integer)
-    ts     = db.Column(db.DateTime, default=datetime.utcnow())
+    code     = db.Column(db.String(64))   # product code 
+    name     = db.Column(db.String(128))  # product name
+    value    = db.Column(db.Integer)      # numeric
+    currency = db.Column(db.String(10))   # string: usd, euro
+    type     = db.Column(db.String(64))   # transaction
+    ts       = db.Column(db.Integer, default=datetime.utcnow().timestamp())
 
     def __repr__(self):
         return str( self.id ) 
