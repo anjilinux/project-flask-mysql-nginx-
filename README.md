@@ -142,7 +142,7 @@ $ flask load_random_data # with randomized timestamps and transaction values
 
 <br />
 
-> 👉 ** Start the APP**
+> 👉 **Start the APP**
 
 ```bash
 $ flask run 
