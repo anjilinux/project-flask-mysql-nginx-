@@ -11,7 +11,7 @@ from apps.home.models import Data
 from apps.api import rest_api
 
 from datetime import datetime
-from sqlalchemy import desc
+from sqlalchemy import desc, asc
 
 """
 API Interface:
@@ -149,7 +149,7 @@ class Sales(Resource):
     """
     def get(self):
 
-        values = Data.query.with_entities(Data.value, Data.ts).order_by(desc(Data.ts)).all()
+        values = Data.query.with_entities(Data.value, Data.ts).order_by(asc(Data.ts)).all()
         
         sales_total = 0
         date_start  = values[0].ts
