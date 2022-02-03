@@ -1,5 +1,27 @@
 # Change Log
 
+## [2.0.2-rc3] 2022-02-03
+### New Features / Improvements
+
+- New API Node: 
+  - `/api/sales` returns sales stats
+- Main Dashboard Update
+  - Charts are real 
+- Updated Sample Input with more data
+  - `media\transactions_data.csv`
+- APP CLI Update
+  - `flask load_data` - randomize the dates (preserve values)
+  - `load_random_data` - randomize the dates AND values
+
+#### Impacted Files:
+
+- `apps\api\routes.py`  - Implements the API route(s)
+- `apps\home\models.py` - Update the **Data** Model
+- `apps\templates\home\dashboard.html` - Update the page / JS Scripts
+- Input Sample file `media\transactions_data.csv`
+- `run.py` - define custom Jinja Filter
+  - convert unix timestamp to YYYY-MM-DD 
+
 ## [2.0.2-rc2] 2022-02-02
 ### New Features / Improvements / Fixes
 

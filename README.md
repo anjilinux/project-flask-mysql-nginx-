@@ -60,12 +60,14 @@ Visit `http://localhost:85` in your browser. The app should be up & running.
 - [x] `Data Tables` - manages paginated information
   - [x] Data load via `Flask CLI`
     - Input: `media/transactions_data.csv`
-    - Load CMD: `flask load_data`
+    - Load CMD: `flask load_data` / values from input / random dates
+    - Load CMD: `flask load_random_data` / randomize values and dates
   - [x] Pagination, Inline edit via Ajax
   - [x] Simple Search
   - [x] Export `PDF`/`xls`: one page, multiple pages, filtered by `search` 
 - [x] `API` via Flask-RestX
-- [WIP] `Sample Charts`
+- [x] `Sample Charts`
+  - Main Dashbord updated to show case real data
 - [WIP] `Social Login`
   - [WIP] *Google*
   - [WIP] *Github*
