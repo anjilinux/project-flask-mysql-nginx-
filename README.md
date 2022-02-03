@@ -11,6 +11,8 @@
 - `DB Tools`: SQLAlchemy ORM, Flask-Migrate (schema migrations)
 - `Session-Based` authentication, **Blueprints**
 - `Deployment`: **Docker**, Gunicorn / Nginx, `HEROKU`
+- `Database Provisioning` via custom commands
+  - `flask load_data` parse and load the [sample file](./media/transactions_data.csv)
 - Free [support](https://appseed.us/support) via `email` and [Discord](https://discord.gg/fZC6hup).
 
 <br />
@@ -42,7 +44,7 @@ Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
-![Boierplate Code Django Dashboard - Template project provided by AppSeed.](https://user-images.githubusercontent.com/51070104/132288100-0c65159f-71a6-41f0-9f55-9544916385ae.jpg)
+![Boierplate Code Django Dashboard - Template project provided by AppSeed.](https://user-images.githubusercontent.com/51070104/152407612-2c514657-4c49-44be-8bd4-29b939d3da21.jpg)
 
 <br />
 
@@ -134,7 +136,8 @@ $ $env:FLASK_ENV = "development"
 > Load Sample Data `transactions_data.csv`
 
 ```bash
-$ flask load_data
+$ flask load_data  # with randomized timestamps
+$ load_random_data # with randomized timestamps and transaction values
 ```
 
 <br />
