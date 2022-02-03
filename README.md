@@ -83,7 +83,7 @@ Visit `http://localhost:85` in your browser. The app should be up & running.
 
 ## ✨ How to use it
 
-> Clone Sources (this repo)
+> 👉 **Clone Sources** (this repo)
 
 ```bash
 $ git clone https://github.com/app-generator/boilerplate-code-flask-dashboard.git
@@ -92,7 +92,7 @@ $ cd boilerplate-code-flask-dashboard
 
 <br />
 
-> Install Modules using a Virtual Environment
+> 👉 **Install Modules** using a Virtual Environment
 
 ```bash
 $ virtualenv env
@@ -112,7 +112,7 @@ $ pip3 install -r requirements.txt
 
 <br />
 
-> Set up the environment
+> 👉 **Set up the environment**
 
 ```bash
 $ export FLASK_APP=run.py
@@ -133,16 +133,16 @@ $ $env:FLASK_ENV = "development"
 
 <br />
 
-> Load Sample Data `transactions_data.csv`
+> 👉 **Load Sample Data** `transactions_data.csv`
 
 ```bash
-$ flask load_data  # with randomized timestamps
-$ load_random_data # with randomized timestamps and transaction values
+$ flask load_data        # with randomized timestamps
+$ flask load_random_data # with randomized timestamps and transaction values
 ```
 
 <br />
 
-> Start the APP
+> 👉 ** Start the APP**
 
 ```bash
 $ flask run 
@@ -155,6 +155,11 @@ At this point we should be able to register new users, authenticate and access t
 - Access the public API
   - Get all items: `http://localhost:5000/api/data`
   - Get 1st item: `http://localhost:5000/api/data`
+  - Get Sales Stats: `http://localhost:5000/api/sales`
+
+<br />
+
+![Flask Boilerplate Code - API Access.](https://user-images.githubusercontent.com/51070104/152408165-c6063314-564b-48ce-a092-bd33bb1f6fdb.png) 
 
 <br />
 
