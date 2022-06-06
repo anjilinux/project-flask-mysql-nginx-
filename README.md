@@ -223,7 +223,7 @@ The project is coded using blueprints, app factory pattern, dual configuration p
    |    |    |
    |    |    |-- home/                      # UI Kit Pages
    |    |         |-- index.html            # Index page
-   |    |         |-- 404-page.html         # 404 page
+   |    |         |-- page-404.html         # 404 page
    |    |         |-- *.html                # All other pages
    |    |    
    |  config.py                             # Set up the app
