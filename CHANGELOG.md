@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.0.4] 2022-06-06
+### Improvements
+
+- Use generated version
+  - Timestamp: `2022-06-06 13:39`
+  - Build ID: `bd664676-ddbc-470a-8fe4-3a89c1277bac`
 
 ## [2.0.3] 2022-06-06
 
