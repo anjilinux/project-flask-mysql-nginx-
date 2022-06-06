@@ -1,5 +1,10 @@
 # Change Log
 
+
+## [2.0.3] 2022-06-06
+
+- Tag latest `manual` coded version 
+
 ## [2.0.2-rc3] 2022-02-03
 ### New Features / Improvements
 
