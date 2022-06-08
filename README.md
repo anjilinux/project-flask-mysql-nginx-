@@ -1,6 +1,6 @@
 # Flask Dashboard Boilerplate 
 
-> Experimental codebase `!!! Don't use it in production !!!` 
+Reference codebase used by AppSeed in all [Flask Dashboards](https://appseed.us/admin-dashboards/flask/) starters.
 
 <br />
 
@@ -18,6 +18,13 @@
 - Database: `mysql`
 - `DB Tools`: SQLAlchemy ORM, Flask-Migrate (schema migrations)
 - Session-Based authentication (via **flask_login**), Forms validation
+- 👉 [Complete documentation](https://docs.appseed.us/boilerplate-code/flask-dashboard) - `Learn how to use and update the product`
+  - ✅ [Set up the environment](https://docs.appseed.us/boilerplate-code/flask-dashboard#environment)
+  - ✅ [Manage App users](https://docs.appseed.us/boilerplate-code/flask-dashboard#manage-app-users)
+  - ✅ [Application Bootstrap Flow](https://docs.appseed.us/boilerplate-code/flask-dashboard#application-bootstrap-flow)
+  - ✅ [UI Assets and Templates](https://docs.appseed.us/boilerplate-code/flask-dashboard#ui-assets-and-templates)
+  - ✅ [Set up the MySql Database](https://docs.appseed.us/boilerplate-code/flask-dashboard#set-up-the-mysql-database)
+  - ✅ [Static Assets for production](https://docs.appseed.us/boilerplate-code/flask-dashboard#static-assets-for-production)  
 
 <br />
 
